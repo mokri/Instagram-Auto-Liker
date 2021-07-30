@@ -1,0 +1,19 @@
+from InstaBot import InstaBot as ib
+import time
+
+if __name__ == '__main__':
+    hako = ib("abdelhakmokri", "areU#1or#0")
+    hako.login()
+    time.sleep(5)
+    hako.escape_notification()
+    time.sleep(3)
+    tags = ['machinelearning','artificialintelligence','python','technology','innovation','engineering','coding','coder','programmer','iot','robotics','computerscience', 'javascript', 'programming', 'android']
+    #[hako.view_stories(tag) for tag in tags]
+    [hako.like_photo(tag) for tag in tags]
+    for tag in tags:
+
+        hako.like_photo(tags)
+        hako.go_back_home()
+    #hako.like_photo('coder')
+
+
